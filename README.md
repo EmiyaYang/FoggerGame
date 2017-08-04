@@ -34,6 +34,6 @@
 ## Known bugs
 
 * Some times the enemies don't follow their setted coordinate but run forward in a column. What's the worse, the bug also happens when I switch back from other webpages though it worked right at the beginning.
-  * ​					![readme_img (4)](https://github.com/EmiyaYang/FoggerGame/blob/master/images/readme_img%20(4).png) 
+![readme_img (4)](https://github.com/EmiyaYang/FoggerGame/blob/master/images/readme_img%20(4).png) 
 * 'SPACE' works all the time...XD
 
