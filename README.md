@@ -1,5 +1,10 @@
 # Effective JavaScript: Frogger
 
+## Table of Contents
+1. [To Start](#to-start)
+2. [In the game](#in-the-game)
+3. [To Restart](#to-restart)
+4. [Known bugs](#known-bugs)
 
 ## To Start 
 ​	Open the index.html in the chorme browser(others may not be compatible, choose the leading character's figure and toll-gate and then click the submit button or click the submit button directly with default values to start the game.
