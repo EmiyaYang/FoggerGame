@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <form name="init_form">
+            <div class="form-group">
+                <h1>选择主角</h1>
+                <label>
+                    <input type="radio" name="character" value="char-boy" checked="checked"/>
+                    <img src="images/char-boy.png">
+                </label>
+                <label>
+                    <input type="radio" name="character" value="char-cat-girl"/>
+                    <img src="images/char-cat-girl.png">
+                </label>
+                <label>
+                    <input type="radio" name="character" value="char-horn-girl"/>
+                    <img src="images/char-horn-girl.png">
+                </label>
+                <label>
+                    <input type="radio" name="character" value="char-pink-girl"/>
+                    <img src="images/char-pink-girl.png">
+                </label>
+                <label>
+                    <input type="radio" name="character" value="char-princess-girl"/>
+                    <img src="images/char-princess-girl.png">
+                </label>
+            </div>
+            <div class="form-group">
+                <h1>选择关卡</h1>
+                <label>
+                    <select name="select">
+                        <option value="0" selected="selected">关卡1</option>
+                        <option value="1">关卡2</option>
+                        <option value="2">关卡3</option>
+                    </select>
+                </label>
+            </div>
+
+            <button type="submit">提交</button>
+        </form>
+    </main>
+
+
+    <script>
+        var form = document.querySelector('form');
+
+        var tollGateIndex;
+
+        var charValue;
+
+        var global = this;
+
+        form.onsubmit = function () {
+
+            charValue = init_form.character.value;
+
+            tollGateIndex = parseInt(init_form.select.value);
+
+            init_form.style.display = "none";
+
+            Engine(global);
+
+            return false;
+        }
+    </script>
+    <script src="js/resources.js"></script>
+    <script src="js/bean.js"></script>
+    <script src="js/engine.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/utils.js"></script>
+</body>
+</html>
